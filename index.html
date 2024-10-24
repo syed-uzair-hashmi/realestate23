@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate</title>
+    <!-- custom-css-link -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+    <link rel="stylesheet" href="Assets/css/media.css">
+    <!-- Bootstap-css-link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- font-awesome-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Swiper-slider -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <!-- AOS-Animation -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="Assets/images/fav.svg" type="image/x-icon">
+  </head>
+<body id="content">
+  <!-- Loader -->
+  <div class="newtons-cradle overflow-hidden" id="loader">
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+    <div class="newtons-cradle__dot"></div>
+    </div>
+    <!--top-button  -->
+      <a href="" class="top-btn show d-flex align-items-center justify-content-center">
+        <i class="fas fa-arrow-up" id="up-arrow"></i>
+      </a>
+    <!-- top-header-start -->
+    <div class="header p-2 " data-aos="fade-right">
+        <div class="container">
+            <div class="row">
+                <div class="col-md t-header mb-2 d-flex align-items-xl-center">
+                    <div class="t-icon d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-map text-white"></i>
+                    </div>
+                    <div class="text  ps-3" >
+                        <p class="con mb-0"><span>Free Call </span> <span>0311033859</span></p>
+                        <p class="con mb-0">Call Us Now 24/7 Customer Support </p>
+                    </div>
+                </div>
+                <div class="col-md t-header mb-2 d-flex align-items-xl-center">
+                    <div class="t-icon d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-location-arrow text-white"></i>                    </div>
+                    <div class="text  ps-3" >
+                        <p class="con mb-0"><span>Our</span> <span> Location</span></p>
+                        <p class="con mb-0">Suite 721 New York NY 10016</p>
+                    </div>
+                </div>
+                <div class="col-md t-header mb-2 d-flex align-items-xl-center">
+                    <div class="t-icon d-flex justify-content-center align-items-center">
+                        <i class="fa-solid fa-globe text-white"></i>              </div>
+                    <div class="text  ps-3" >
+                        <p class="con mb-0"><span>Connect</span> <span>With Us </span></p>
+                        <p class="con mb-0">
+                            <a href="">Facebook</a>
+                            <a href=""> Twitter</a>
+                            <a href="">Link-d-in</a>
+                        </p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>    
+    <!-- top-header-ends -->
+    <!-- navbar-start -->
+     <section>
+      <nav class="navbar navbar-expand-lg  overflow-hidden navbar-light bg-white" data-aos="fade-left" id="sticky">
+        <div class="container overflow-hidden">
+          <a class="navbar-brand logo sm-ml-4" href="index.html">Estate <span>Agency</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto gap-4">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="property.html">Property</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="agent.html">Agent</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link" href="contact.php">Contact</a>
+              </li>
+          
+
+          
+          
+
+            </ul>
+          </div>
+        </div>
+      </nav> 
+     </section>
+      <!-- Navbar-ends -->
+       <!-- Banner-start -->
+       <section class="banner mb-5" >
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-6 align-items-center" data-aos="zoom-in-down">
+              <h3>Best Find Your Dream <span> House </span> And Luxury Building </h3>
+              <p class="border-left">Finding Your Perfect Home, Every Step of the Way."</p>
+              <div class="d-flex gap-3" >
+                <a href="index.html" class="btn b-btn ">Contact Us</a>
+              </div>
+            </div>
+            <div class="col-md-6 p-4 overflow-hidden" data-aos="zoom-in"> 
+              <div class="banner-img">
+              <img src="Assets/images/banner3.png"  alt=""></div>
+            </div>
+            </div>
+            
+            <div class="arrow-bounce d-flex align-items-center justify-content-center " >
+              <a class="fa fa-arrow-down fs-3" href="#help"></a>
+            </div>
+        </div>
+       </section>
+       <!-- Banner-End -->
+        <!-- search-section-start -->
+          <section class="search-section bg-light mt-5 " >
+          <div class="container">
+            <form id="search" action="search.php" method="post" >
+            <div class="row" >
+              <div class="col-md-6 col-lg-3 col-md-6 mb-3 ">
+                <div class="search-section">
+              
+                  <select class="form-select" aria-label="Default select example">
+                    
+                    <option value="select-city">Select City</option>
+                    <option value="karachi">karachi</option>
+                    <option value="Islamabad">Islamabad</option>
+                    <option value="Lahore">Lahore</option>
+                    <option value="hydrabad">Hydrabad</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 col-md-6 mb-3 ">
+                <div class="search-section">
+                  
+                  <select class="form-select" aria-label="Default select example">
+                    <option class="chenge" selected>Property Status</option>
+                    <option value="forrent">For Rent</option>
+                    <option value="forsale">For Sale</option>
+                   
+                  </select>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-3 col-md-6  mb-3">
+                <div class="search-section">
+                  <select class="form-select" aria-label="Default select example">
+                    <option class="chenge" selected>Type</option>
+                    <option value="house">house</option>
+                    <option value="apartment">apartment</option>
+                    <option value="villa">villa</option>
+                    <option value="office">office</option>
+                    <option value="resturant">resturent</option>
+
+                  </select>
+                </div>
+              </div>
+            
+              <div class="col-md-6 col-lg-3 col-md-6 mb-3 ">
+                <button class="s-btn"  value="Search">Search</button>
+              </div>
+              
+             
+          
+            </div>
+          
+          </form>
+          </div>
+          </section>
+         <!-- search-section-End -->
+                  <!-- Help-section-start -->
+         <div class="help mb-5 py-5 bg-light" id="help">
+          <div class="container">
+            <div class="col-12">
+              <h3 class="headings" data-aos="fade-down">We will help you find your home</h3>
+              <p class="para text-center">Far far away, behind the word mountainsfar from</p>
+            </div>
+            <div class="row justify-content-center my-5  align-items-center">
+
+              <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-right">
+                  <div class="help-box text-center">
+                      <img src="Assets/images/help/new.png"   alt="">   
+                      <h3>New Properties</h3>
+                      
+                  </div> 
+              </div>
+              
+              <div class="col-lg-3 col-md-6  d-flex justify-content-center" data-aos="fade-down" >
+                <div class="help-box text-center">
+                    <img src="Assets/images/help/real-estate.png"  alt="">                    
+                      <h3>Contact Agent</h3>
+                  </div> 
+            </div>
+            
+            <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-down" >
+              <div class="help-box text-center">
+                  <img src="Assets/images/help/business.png"   alt="">  
+                  <h3>Building for Sale</h3>                  
+              </div> 
+          </div>
+          
+          <div class="col-lg-3 col-md-6 d-flex justify-content-center" data-aos="fade-left" >
+            <div class="help-box text-center">
+                <img src="Assets/images/help/for-sale.png"  alt="">  
+                <h3>House for Sale</h3>                  
+            </div> 
+        </div>
+
+            </div>
+          </div>
+         </div>
+             <!-- Help-section-end -->
+    
+        <!-- Properties-Section-Start -->
+         <section class="properties  bg-white mb-5" >
+          <div class="container">
+            <div class="col-12 my-5   ">
+
+              <h3 class="headings" data-aos="fade-down">Featured Properties</h3>
+              <p class="para text-center">Who are in extremely love with eco friendly system.</p>
+            </div>
+            <div class="row">
+
+              <div class="col-lg-4 mb-4" data-aos="fade-in-down" >
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-2.webp" class="img-fluid"  alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$1,930,000</span>
+                    <h3 >Saint Paul, MN 55102</h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+               <div class="col-lg-4 mb-4" data-aos="fade-in-down"  >
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-3.webp" class="img-fluid"  alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$2300,000</span>
+                    <h3 >Sunset Haven, 1234 Maple</h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+               <div class="col-lg-4 mb-4" data-aos="fade-in-down"  >
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-4.webp" class="img-fluid"  alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$2100,000</span>
+                    <h3 >Lakeside Retreat, 5678 </h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+               <div class="col-lg-4 mb-4" data-aos="fade-in-down" >
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-5.webp" class="img-fluid"    alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$1,000,000</span>
+                    <h3 >Urban Oasis, 9101 Elm Road</h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+               <div class="col-lg-4 mb-4" data-aos="fade-in-down"  >
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-6.webp" class="img-fluid"  alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$1,120,000</span>
+                    <h3 >Mountain  Estates, 2345</h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+               <div class="col-lg-4 mb-4" data-aos="fade-in-down">
+                <a href="" class="single-prop d-block">
+                  <figure>
+                    <img src="Assets/images/property/p-7.webp" class="img-fluid" alt="">
+                  </figure>
+                  <div class="prop-text">
+                   <div class="inner">
+                    <span class="price" >$999,000</span>
+                    <h3 >Greenfield Heights, 7890 </h3>
+                    <p >Los Angeles, CA 90005</p>
+                   </div>
+                   <div class="prop-more-info">
+                    <div class="inner d-flex">
+                      <div class="col">
+                        <span>Area</span>
+                        <strong>240m <sub>2</sub></strong>
+                      </div>
+                
+                      <div class="col">
+                        <span>Beds</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Baths</span>
+                        <strong>2</strong>
+                      </div>
+                      <div class="col">
+                        <span>Garage</span>
+                        <strong>1</strong>
+                      </div>
+                    </div>
+                   </div>
+                  </div>
+                </a>  
+               </div>
+            </div>
+          </div>
+         </section>
+         <!-- Properties-Section-End -->
+         <!-- agent-section-start -->
+          <section class="agent-slider bg-light py-4" >
+            <div class="col-12   ">
+              
+                
+              <h3 class="headings   fs-2" data-aos="fade-down"> Meet Our Agents</h3>
+              <p class="para text-center">The Team That Understands Your Needs</p>
+
+          </div>
+            <div class="swiper agent-slider   container my-5  h-100vh" data-aos="fade-right" >
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper pb-5">
+                <!-- Slides -->
+                <div class="col-lg-3 col-md-6 agent-shadow swiper-slide col-md-6  ">
+                  <div class="single-agent text-center ">
+                      <div class="sa-pic">
+                          <img src="Assets/images/agents/agent1.webp"  alt="">
+                          <div class="hover-social">
+                              <a href="#" class="twitter">
+                                  <i class="fa-brands fa-x-twitter"></i>
+                              </a>
+                              <a href="#" class="insta">
+                                  <i class="fa-brands fa-instagram"></i>
+                              </a>
+                              <a href="#" class="facebook">
+                                  <i class="fa-brands fa-facebook"></i>
+                              </a>
+                          </div>
+                      </div>
+                      <h4>Tillie Burns  <span>Founder &Ceo</span></h4>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 agent-shadow swiper-slide col-md-6  ">
+                <div class="single-agent text-center">
+                    <div class="sa-pic">
+                        <img src="Assets/images/agents/agent3.jpg" alt="">
+                        <div class="hover-social">
+                            <a href="#" class="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h4>Emily Nelson  <span>Company Agent</span></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 agent-shadow swiper-slide  col-md-6  ">
+                <div class="single-agent text-center">
+                    <div class="sa-pic">
+                        <img src="Assets/images/agents/agent2.webp"  alt="">
+                        <div class="hover-social">
+                            <a href="#" class="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h4>Cliford Colon  <span>Company Agent</span></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 agent-shadow swiper-slide col-md-6  ">
+                <div class="single-agent text-center">
+                    <div class="sa-pic">
+                        <img src="Assets/images/agents/agent4.jpg" alt="">
+                        <div class="hover-social">
+                            <a href="#" class="twitter">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="insta">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#" class="facebook">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h4>Derrick Lawson  <span>Company Agent</span></h4>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 agent-shadow swiper-slide col-md-6 ">
+              <div class="single-agent text-center">
+                  <div class="sa-pic">
+                      <img src="Assets/images/agents/agent3.jpg" alt="">
+                      <div class="hover-social">
+                          <a href="#" class="twitter">
+                              <i class="fa-brands fa-x-twitter"></i>
+                          </a>
+                          <a href="#" class="insta">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="#" class="facebook">
+                              <i class="fa-brands fa-facebook"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <h4>Sofia <span>Company Agent</span></h4>
+              </div>
+          </div>
+          <div class="col-lg-3 col-md-6  agent-shadow swiper-slide  col-md-6  ">
+              <div class="single-agent text-center">
+                  <div class="sa-pic">
+                      <img src="Assets/images/agents/agent2.webp"  alt="">
+                      <div class="hover-social">
+                          <a href="#" class="twitter">
+                              <i class="fa-brands fa-x-twitter"></i>
+                          </a>
+                          <a href="#" class="insta">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="#" class="facebook">
+                              <i class="fa-brands fa-facebook"></i>
+                          </a>
+                      </div>
+                  </div>
+                  <h4>Cliford Colon  <span>Company Agent</span></h4>
+              </div>
+          </div>
+    
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination bullet "></div>
+            
+             </div>
+
+          </section>
+          <!-- agent-section-end -->
+           <!-- testimonial-section-start -->
+          <section class="review mb-4 p-5 bg-white">
+            <div class="col-12   ">
+              
+                
+              <h3 class="headings   fs-2" data-aos="fade-down"> client testimonial</h3>
+              <p class="para text-center">Exceptional Service, As Told by Our Clients</p>
+
+            </div>
+       
+            <div class="swiper review-1 container" data-aos="fade-left">
+      
+              <div class="swiper-wrapper py-5">
+
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/1.jpg.webp" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                        <div class=" ms-3 review-detail">
+                            <h3  >Emily Harper
+                            <span class="d-block sub-head mt-2" > Director</span>
+                          </h3>
+                            
+                          <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                        </div>
+                  </div>
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/4.jpg" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                      <div class=" ms-3 review-detail">
+                          <h3  >Mason Turner
+                          <span class="d-block sub-head mt-2" >CEP's Director</span>
+                        </h3>
+                          
+                        <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                      </div>
+                  </div>
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/1.jpg.webp" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                    <div class=" ms-3 review-detail">
+                        <h3  >jennifar lopaz
+                        <span class="d-block sub-head mt-2" >CEP's Director</span>
+                      </h3>
+                        
+                      <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                    </div>
+                  </div>
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/4.jpg " class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                    <div class=" ms-3 review-detail">
+                        <h3  >Monkey D Luffy
+                        <span class="d-block sub-head mt-2" >CEP's Director</span>
+                      </h3>
+                        
+                      <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                    </div>
+                  </div>
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/1.jpg.webp" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                    <div class=" ms-3 review-detail">
+                        <h3  >Noah Sullivan
+                        <span class="d-block sub-head mt-2" >CEP's Director</span>
+                      </h3>
+                        
+                      <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                    </div>
+                  </div>
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/1.jpg.webp" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                    <div class=" ms-3 review-detail">
+                        <h3  >Ethan Blake
+                        <span class="d-block sub-head mt-2" >CEP's Director</span>
+                      </h3>
+                        
+                      <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                    </div>
+                  </div>
+      
+                    <div class="review-card swiper-slide d-flex justify-content-center  ">
+                   
+                      <img src="Assets/images/review/4.jpg" class="img-fluid rounded-circle reveiw-img " alt="">
+                 
+                    <div class=" ms-3 review-detail">
+                        <h3  >Alexander Hayes
+                        <span class="d-block sub-head mt-2" >CEP's Director</span>
+                      </h3>
+                        
+                      <p class="mt-2  text-justify"><strong>“</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi earum eligendi voluptatum expedita  animi. <strong>”</strong></p>
+                    </div>
+                  </div>
+                  
+                  
+  
+                  <!-- Add more slides as needed -->
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination  review-bullet"></div>
+              <!-- Add Navigation -->
+              
+            </div> 
+      
+          </section>
+        
+         <!-- testimonial-section-End -->
+          <!-- Footer-start -->
+        <section class="footer pt-4" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 col-md-6 text-white my-4" data-aos="zoom-in-right">
+                        <div class="footer-widget mb-0 ">
+                            <h4 class="mb-4">Estate <span>Agency</span></h4>
+                            <p class="mt-3">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                        <div class="footer-icons gap-3 mt-4  d-flex justify-content-start align-items-center">
+                          <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                          <a href=""><i class="fa-brands fa-instagram"></i></a>
+                          <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+                          <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-md-6 my-4 text-white" data-aos="zoom-in-down">
+                      <div class="footer-widget">
+                        <h4 class="mb-4">Quick Links</h4>
+                        <ul class="list-unstyled f-links">
+                            <li> <i class="fa-solid fa-angles-right"></i><a href="index.html">Home</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="about.html">About</a></li>
+                            <li><i class="fa-solid fa-angles-right"></i><a href="property.html">Property</a></li>
+                            <li> <i class="fa-solid fa-angles-right"></i><a href="contact.html">Contact</a></li>
+
+                        </ul>
+                      </div>
+
+
+                    </div>
+                    <div class="col-md-6 col-lg-3 col-md-6 my-4 text-white" data-aos="zoom-in-down">
+                        <div class="footer-widget">
+                          <h4 class="mb-4">Company</h4>
+                          <ul class="list-unstyled f-links">
+                              <li> <i class="fa-solid fa-angles-right"></i><a href="index.html">Terms & Conditions</a></li>
+                              <li><i class="fa-solid fa-angles-right"></i><a href="index.html">User's Guide</a></li>
+                              <li><i class="fa-solid fa-angles-right"></i><a href="index.html">Clients Support</a></li>
+                              <li> <i class="fa-solid fa-angles-right"></i><a href="index.html">Press Info</a></li>
+  
+                          </ul>
+                        </div>
+  
+  
+                      </div>
+                      <div class="col-md-6 col-lg-3 col-md-6 my-4 " data-aos="zoom-in-left">
+                        <div class="footer-widget">
+                          <h4 class="mb-4 text-white">Have A Question?</h4>
+                            <div class="f-contact">
+                               <ul class="list-unstyled">
+                                <li>
+                                     <i class="icon fa-solid fa-map "></i>
+                                    <span class="ms-2 text">203 Fake St. Mountain View, San Francisco, California, USA</span>
+                                </li>
+                                <li class="mb-2">
+                                  <i class="icon fa-solid fa-phone"></i>
+                                 <span class="ms-2 text">+9211097236</span>
+                             </li>
+                             <li>
+                              <i class="icon fa-solid fa-location-arrow "></i>
+                             <span class="ms-2 text">realestateinfo@example.com</span>
+                         </li>
+                               </ul>    
+                            
+                            </div>
+                        </div>
+  
+  
+                      </div>
+                </div>
+                <div class="col-12 d-flex align-items-center" >
+                  <div class="footer-copyright p-2">
+                    <p class="text-center"> Syed|Uzair|Hashmi <span>&copy; 2024 </span> All Right Reserved </p>
+                  </div>
+
+                </div> 
+            </div>
+        </section>
+        <!-- Footer-ends -->
+         <!-- custom js link -->
+         <script src="Assets/js/index.js"></script>
+         <!-- bootstrap -js -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <!-- swiper-js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- AOS ANimation -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+
+      AOS.init({
+        offeset:0,
+        once: true,
+        disable: function() {
+          return window.innerWidth < 768;
+      }
+      });   
+      </script>
+</body>
+</html>

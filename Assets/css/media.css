@@ -1,0 +1,53 @@
+@media only screen and (max-width: 767px) {
+    .headings
+    {
+        font-size: 20px;
+    }
+ 
+    .banner h3
+    {
+        font-size: 39px;
+    }
+    .banner-left
+    {
+        text-align: center !important;
+    }
+    .top-btn.btn-show {
+        visibility: visible;
+        left: 80% !important;
+        z-index: 111111;
+    }
+    .review-card
+    {
+        padding: 20px 0 !important;
+
+        margin-top:20px !important ;
+        align-items: center;
+        flex-direction: column;
+        margin: 0px auto;
+        box-shadow: 0 8px 15px 5px rgba(12, 35, 34, 0.05) !important;
+
+
+    }
+    .review-card .review-detail
+    {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .review-card .review-detail p
+    {
+         margin-top: 17px !important;
+        font-size: 14px;
+        text-align: center;
+    }
+    .contact-us .need-help .text h3
+    {
+        font-size: 16px !important;
+        margin-bottom: 0px !important;
+    }
+    .contact-us .need-help .text p
+    {
+        margin-top: 10px !important;
+        font-size: 14px !important;
+    }
+}

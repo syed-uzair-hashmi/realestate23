@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modification Instructions Of Real Estate</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none !important;
+            font-family: "Poppins", sans-serif;
+        }
+        h1, h2, h3,h4,h5,h6 {
+            color: rgba(0, 0, 0, 0.8);
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-left: 3px solid #ccc;
+            font-family: "Courier New", Courier, monospace;
+            display: inline-block;
+            margin-top: 10px;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 6px solid #2196F3;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>How to Modify Your Web Pages</h1>
+
+    <p>These instructions will guide you through modifying your web pages: <strong>index.html, about.html, property.html, and contact.html</strong>. The technical stack used includes Bootstrap v5.3.3, Swiper Slider v11, Font Awesome 6.5.2, and AOS Library v2.3.4.</p>
+
+    <h2>Prerequisites</h2>
+    <ul>
+        <li>Basic understanding of HTML, CSS, and JavaScript</li>
+        <li>Text editor (e.g., VSCode, Sublime Text)</li>
+        <li>Browser to preview changes (e.g., Chrome, Firefox)</li>
+    </ul>
+
+    <h2>File Structure</h2>
+    <p>The project consists of the following key files:</p>
+    <ul>
+        <li><span class="code">index.html</span> - Home page</li>
+        <li><span class="code">about.html</span> - About us page</li>
+        <li><span class="code">property.html</span> - Property listings page</li>
+        <li><span class="code">agent.html</span> - Agent page</li>
+        <li><span class="code">contact.html</span> - Contact page</li>
+
+    </ul>
+
+    <h2>1. Customizing Bootstrap Components</h2>
+    <p>Bootstrap is used for styling and layout. To customize components, you can override Bootstrap classes or add your own custom styles in a separate CSS file.</p>
+    <p>Example: To change the background color of the navbar in <span class="code">index.html</span>:</p>
+    <pre class="code">
+&lt;style&gt;
+    .navbar {
+        background-color: #004085; /* Change this to your desired color */
+    }
+&lt;/style&gt;
+    </pre>
+
+    <h2>2. Modifying Swiper Slider</h2>
+    <p>The Swiper Slider is used for carousels. You can customize it by modifying the Swiper initialization script in your HTML files.</p>
+    <p>Example: To change the speed of slides in the Swiper on <span class="code">index.html</span>:</p>
+    <pre class="code">
+&lt;script&gt;
+    var swiper = new Swiper('.swiper-container', {
+        speed: 600, /* Change this value to adjust the transition speed */
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+&lt;/script&gt;
+    </pre>
+
+    <h2>3. Using Font Awesome Icons</h2>
+    <p>Font Awesome provides a wide range of icons. To use an icon, include it within an HTML element by adding a class.</p>
+    <p>Example: To add a home icon in the navbar:</p>
+    <pre class="code">
+&lt;i class="fas fa-home"&gt;&lt;/i&gt; Home
+    </pre>
+
+    <h2>4. Applying AOS (Animate on Scroll) Effects</h2>
+    <p>AOS is used to animate elements when they come into view as you scroll. To apply an AOS effect, add a data attribute to the HTML element.</p>
+    <p>Example: To fade in a section on scroll:</p>
+    <pre class="code">
+&lt;div data-aos="fade-in"&gt;
+    &lt;h2&gt;Welcome to Our Website&lt;/h2&gt;
+    &lt;p&gt;Some introductory text here.&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h2>5. Editing Specific Pages</h2>
+
+    <h3>index.html</h3>
+    <p>This is your homepage, where you might feature a hero banner, key information, and links to other sections of your site.</p>
+    <p>To change the hero banner image:</p>
+    <pre class="code">
+&lt;div class="hero-banner" style="background-image: url('images/banner.jpg');"&gt;
+    &lt;!-- Your content here --&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h3>about.html</h3>
+    <p>Used for introducing your company, team, and history. Customize the content as needed.</p>
+    <p>To edit team member profiles:</p>
+    <pre class="code">
+&lt;div class="team-member"&gt;
+    &lt;img src="images/team1.jpg" alt="Team Member Name"&gt;
+    &lt;h3&gt;Team Member Name&lt;/h3&gt;
+    &lt;p&gt;Position&lt;/p&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h3>property.html</h3>
+    <p>Displays property listings. You can modify the listings by editing the HTML structure.</p>
+    <p>To change a property listing:</p>
+    <pre class="code">
+&lt;div class="property-listing"&gt;
+    &lt;img src="images/property1.jpg" alt="Property Name"&gt;
+    &lt;h3&gt;Property Name&lt;/h3&gt;
+    &lt;p&gt;Description&lt;/p&gt;
+    &lt;a href="property-detail.html" class="btn btn-primary"&gt;View Details&lt;/a&gt;
+&lt;/div&gt;
+    </pre>
+
+    <h3>contact.html</h3>
+    <p>This page includes a contact form and your company’s contact information. You can customize the form fields or add Google Maps for your location.</p>
+    <p>To edit the contact form:</p>
+    <pre class="code">
+    &lt;form action="contact.php" method="post"&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="name" class="form-label"&gt;Name&lt;/label&gt;
+        &lt;input type="text" class="form-control" id="name" name="name" required&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="email" class="form-label"&gt;Email&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="email" name="email" required&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+    &lt;label for="subject" class="form-label"&gt;Subject&lt;/label&gt;
+    &lt;input type="subject" class="form-control" id="email" name="subject" required&gt;
+&lt;/div&gt;
+
+    &lt;div class="mb-3"&gt;
+        &lt;label for="message" class="form-label"&gt;Message&lt;/label&gt;
+        &lt;textarea class="form-control" id="message" name="message" rows="4" required&gt;&lt;/textarea&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+    </pre>
+
+  <h2>6. Configuring PHPMailer for the Contact Form</h2>
+    <p>The contact form on the <span class="code">contact.html</span> page is set up to use PHPMailer for sending emails. Follow these steps to configure it:</p>
+
+    <h3>Step 1: Open the <span class="code">contact.php</span> File</h3>
+    <p>In your project directory, locate the <span class="code">contact.php</span> file. This file contains the code to process the form data and send emails using PHPMailer.</p>
+
+    <h3>Step 2: Enter Your SMTP Credentials</h3>
+    <p>Within the <span class="code">contact.php</span> file, find the section where you need to input your SMTP server details. It should look something like this:</p>
+    <pre class="code">
+$mail->isSMTP();
+$mail->Host = 'smtp.example.com'; // Specify your SMTP server
+$mail->SMTPAuth = true;
+$mail->Username = 'your-email@example.com'; // Your email address
+$mail->Password = 'your-email-password'; // Your email password
+$mail->SMTPSecure = 'tls'; // Enable TLS encryption
+$mail->Port = 587; // TCP port to connect to
+    </pre>
+    <p>Replace the placeholders with your actual SMTP credentials.</p>
+
+    <h3>Step 3: Customize the Email Content</h3>
+    <p>You can customize the content of the email that will be sent. Look for the section in <span class="code">contact.php</span> where the email body is defined:</p>
+    <pre class="code">
+$mail->setFrom('your-email@example.com', 'Your Name');
+$mail->addAddress('recipient@example.com', 'Recipient Name');
+$mail->Subject = 'New Contact Form Submission';
+$mail->Body    = "Name: {$_POST['name']}\nEmail: {$_POST['email']}\nMessage: {$_POST['message']}";
+    </pre>
+    <p>Modify the <span class="code">$mail->Subject</span> and <span class="code">$mail->Body</span> to fit your needs.</p>
+
+    <h3>Step 4: Test the Form</h3>
+    <p>After configuring PHPMailer, test the form by filling out the contact form on your website and submitting it. Ensure that you receive the email as expected.</p>
+
+    <h3>Step 5: Troubleshooting</h3>
+    <p>If the email doesn't send correctly, check the following:</p>
+    <ul>
+        <li><strong>SMTP Settings:</strong> Ensure all SMTP settings are correct, including the server, port, username, and password.</li>
+        <li><strong>Server Configuration:</strong> Your web server must support sending emails via SMTP. Contact your hosting provider if unsure.</li>
+        <li><strong>PHPMailer Errors:</strong> Check the PHPMailer documentation for any error messages that appear.</li>
+    </ul>
+
+   
+
+    <h2>Troubleshooting</h2>
+    <p>If you encounter issues while customizing, here are some steps to help resolve them:</p>
+    <ul>
+        <li><strong>Ensure all libraries are properly linked:</strong> Check that the links to Bootstrap, Swiper Slider, Font Awesome, and AOS are correct in the <span class="code">&lt;head&gt;</span> section of your HTML files.</li>
+        <li><strong>Check for console errors:</strong> Open your browser's developer tools and look for any errors in the console that might give clues on what went wrong.</li>
+        <li><strong>Validate your HTML/CSS:</strong> Use an online validator to ensure your HTML and CSS code is free from syntax errors.</li>
+    </ul>
+
+    <p>If you need further assistance, feel free to contact our support team.</p>
+
+</body>
+</html>
